@@ -28,6 +28,7 @@
         hm_l: homerow_mods_left {
             flavor = "balanced";
             tapping-term-ms = <280>;
+            #binding-cells = <2>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -39,6 +40,7 @@
         hm_r: homerow_mods_right {
             flavor = "balanced";
             tapping-term-ms = <280>;
+            #binding-cells = <2>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -76,7 +78,7 @@
             &gresc       &hm_l LALT A  &hm_l LCTRL S  &hm_l LCMD D &hm_l LSHFT F    &kp G                                       &kp H     &hm_r RSHIFT J  &hm_r RCMD K &hm_r RCTRL L &hm_r RALT LA(O) &kp LA(SINGLE_QUOTE)
     //    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤  ╭──────────╮ ╭──────────╮  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
             &kp LSHFT       &kp Z       &kp X           &kp C           &kp V       &kp B         &kp C_MUTE     &none          &kp N           &kp M         &kp COMMA     &kp DOT     &kp FSLH    &kp RSHFT
-    //                  ├─────────────┼─────────────┼─────────────┼─────────────┬─────────────┤  ╰──────────╯ ╰──────────╯  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    //    ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┬─────────────┤  ╰──────────╯ ╰──────────╯  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
                             &kp LGUI   &kp LEFT_ARROW &kp RIGHT_ARROW &kp SPACE  &kp BACKSPACE                                  &mo 2        &kp ENTER    &kp UP_ARROW &kp DOWN_ARROW   &kp RGUI
     //                  ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
                 >;
