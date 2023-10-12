@@ -36,6 +36,11 @@ RH0 to RH4: 55 to 59
 #define RAISE 2
 #define ADJUST 3
 
+// Set nice!view CS pin to use D2 pin on nice!nano V2
+&nice_view_spi {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
 / {
     behaviors {
         /* left-hand HRMs */
