@@ -20,7 +20,7 @@
 
     behaviors {
         /* left-hand HRMs */
-        ZMK_BEHAVIOR(hml, hold_tap,
+        hm_l: homerow_mods_left {
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -28,10 +28,10 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
-        )
+        };
 
         /* right-hand HRMs */
-        ZMK_BEHAVIOR(hmr, hold_tap,
+        hm_r: homerow_mods_right {
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -39,7 +39,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
-        )
+        };
     };
 
    // Activate ADJUST layer by pressing raise and lower
