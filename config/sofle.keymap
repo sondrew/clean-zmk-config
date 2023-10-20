@@ -125,7 +125,7 @@ RH0 to RH4: 55 to 59
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         lower_layer {
@@ -142,12 +142,14 @@ RH0 to RH4: 55 to 59
             bindings = <
 &trans  &kp F1         &kp F2             &kp F3                  &kp F4                   &kp F5                               &kp F6       &kp F7            &kp F8              &kp F9     &kp F10           &kp F11
 &trans  &kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp AMPERSAND                        &kp TILDE    &kp BACKSLASH     &kp PIPE            &kp SLASH  &kp SINGLE_QUOTE  &kp F12
-&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp AMPS          &kp KP_MULTIPLY     &kp LPAR   &kp MINUS         &kp PIPE
+&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp AMPS          &kp KP_MULTIPLY     &kp LPAR   &kp MINUS         &kp QUESTION
 &trans  &kp EQUAL      &kp LA(E)          &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp DOLLAR     &trans        &trans  &kp PERCENT  &kp RBKT          &kp SEMI            &kp COLON  &kp UNDERSCORE    &trans
                        &kp PERCENT        &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &trans         &kt DELETE    &trans  &trans       &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         raise_layer {
@@ -168,7 +170,9 @@ RH0 to RH4: 55 to 59
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans           &kp KP_NUMBER_0  &kp PERIOD
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp LS(RIGHT_ARROW) LS(LEFT_ARROW)>;
         };
     };
 };
