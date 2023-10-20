@@ -144,7 +144,7 @@ RH0 to RH4: 55 to 59
 &trans  &kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp AMPERSAND                        &kp TILDE    &kp BACKSLASH     &kp PIPE            &kp SLASH  &kp SINGLE_QUOTE  &kp F12
 &trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp AMPS          &kp KP_MULTIPLY     &kp LPAR   &kp MINUS         &kp QUESTION
 &trans  &kp EQUAL      &kp LA(E)          &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp DOLLAR     &trans        &trans  &kp PERCENT  &kp RBKT          &kp SEMI            &kp COLON  &kp UNDERSCORE    &trans
-                       &kp PERCENT        &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &trans         &kt DELETE    &trans  &trans       &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &trans
+                       &kp PERCENT        &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp ENTER      &kt DELETE    &trans  &trans       &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &trans
             >;
 
             sensor-bindings =
@@ -164,8 +164,8 @@ RH0 to RH4: 55 to 59
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans     &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &bt BT_PRV    &bt BT_NXT                      &kp ASTERISK  &kt KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp N0     &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DEL    &kp BSPC
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &bt BT_PRV    &bt BT_NXT                      &kp ASTERISK  &kt KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans     &kp EXCLAMATION
 &trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans           &kp KP_NUMBER_0  &kp PERIOD
             >;
