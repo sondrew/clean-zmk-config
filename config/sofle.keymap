@@ -68,6 +68,7 @@ RH0 to RH4: 55 to 59
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // delay positional check until key-release
         };
+
         c_copy: copy_on_double_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "COPY_ON_DOUBLE_TAP";
@@ -75,6 +76,7 @@ RH0 to RH4: 55 to 59
             tapping-term-ms = <180>;
             bindings = <&kp C>, <&kp LG(C)>;
         };
+
         v_paste: paste_on_double_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE_ON_DOUBLE_TAP";
@@ -82,6 +84,7 @@ RH0 to RH4: 55 to 59
             tapping-term-ms = <180>;
             bindings = <&kp V>, <&kp LG(V)>;
         };
+
         x_cut: cut_on_double_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "CUT_ON_DOUBLE_TAP";
@@ -142,7 +145,7 @@ RH0 to RH4: 55 to 59
             bindings = <
 &trans  &kp F1         &kp F2             &kp F3                  &kp F4                   &kp F5                               &kp F6       &kp F7            &kp F8              &kp F9     &kp F10           &kp F11
 &trans  &kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp AMPERSAND                        &kp TILDE    &kp BACKSLASH     &kp PIPE            &kp SLASH  &kp SINGLE_QUOTE  &kp F12
-&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp AMPS          &kp KP_MULTIPLY     &kp LPAR   &kp MINUS         &kp QUESTION
+&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp HASH          &kp KP_MULTIPLY     &kp PLUS   &kp MINUS         &kp QUESTION
 &trans  &kp EQUAL      &kp LA(E)          &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp DOLLAR     &trans        &trans  &kp PERCENT  &kp RBKT          &kp SEMI            &kp COLON  &kp UNDERSCORE    &trans
                        &kp PERCENT        &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp ENTER      &kp DELETE    &trans  &trans       &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &trans
             >;
