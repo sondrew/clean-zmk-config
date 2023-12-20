@@ -43,10 +43,10 @@ RH0 to RH4: 55 to 59
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             label = "HOMEROW_MODS_LEFT";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             #binding-cells = <2>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <150>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
@@ -59,10 +59,10 @@ RH0 to RH4: 55 to 59
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             label = "HOMEROW_MODS_RIGHT";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             #binding-cells = <2>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <150>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
@@ -73,7 +73,7 @@ RH0 to RH4: 55 to 59
             compatible = "zmk,behavior-tap-dance";
             label = "COPY_ON_DOUBLE_TAP";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             bindings = <&kp C>, <&kp LG(C)>;
         };
 
@@ -81,7 +81,7 @@ RH0 to RH4: 55 to 59
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE_ON_DOUBLE_TAP";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             bindings = <&kp V>, <&kp LG(V)>;
         };
 
@@ -89,7 +89,7 @@ RH0 to RH4: 55 to 59
             compatible = "zmk,behavior-tap-dance";
             label = "CUT_ON_DOUBLE_TAP";
             #binding-cells = <0>;
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             bindings = <&kp X>, <&kp LG(X)>;
         };
     };
