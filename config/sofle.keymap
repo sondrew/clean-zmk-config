@@ -145,7 +145,7 @@ RH0 to RH4: 55 to 59
             bindings = <
 &trans  &kp F1         &kp F2             &kp F3                  &kp F4                   &kp F5                               &kp F6       &kp F7            &kp F8              &kp F9     &kp F10           &kp F11
 &trans  &kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp AMPERSAND                        &kp TILDE    &kp BACKSLASH     &kp PIPE            &kp SLASH  &kp SINGLE_QUOTE  &kp F12
-&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp HASH          &kp KP_MULTIPLY     &kp PLUS   &kp MINUS         &kp QUESTION
+&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp HASH          &kp ASTERISK        &kp PLUS   &kp MINUS         &kp QUESTION
 &trans  &kp EQUAL      &kp LA(E)          &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp DOLLAR     &trans        &trans  &kp PERCENT  &kp RBKT          &kp SEMI            &kp COLON  &kp UNDERSCORE    &trans
                        &kp PERCENT        &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp ENTER      &kp DELETE    &trans  &trans       &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &trans
             >;
@@ -166,16 +166,26 @@ RH0 to RH4: 55 to 59
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans     &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &bt BT_PRV    &bt BT_NXT                      &kp ASTERISK  &kt KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EXCLAMATION
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans           &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &bt BT_PRV    &bt BT_NXT                      &kp ASTERISK  &kt KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &kp EXCLAMATION
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION  &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &kp COMMA        &kp KP_NUMBER_0  &kp PERIOD
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp LS(RIGHT_ARROW) LS(LEFT_ARROW)>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
