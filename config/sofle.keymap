@@ -119,7 +119,7 @@ RH0 to RH4: 55 to 59
 &kp ESCAPE      &kp N1                &kp N2            &kp N3          &kp N4           &kp N5                                      &kp N6       &kp N7          &kp N8          &kp N9             &kp N0                     &kp LG(LS(N4))
 &kp TAB         &kp Q                 &kp W             &kp E           &kp R            &kp T                                       &kp Y        &kp U           &kp I           &kp O              &kp P                      &kp LA(A)
 &mo 1           &hm_l LEFT_CONTROL A  &hm_l LEFT_ALT S  &hm_l LCMD D    &hm_l LSHFT F    &kp G                                       &kp H        &hm_r RSHIFT J  &hm_r RCMD K    &hm_r RIGHT_ALT L  &hm_r RIGHT_CONTROL LA(O)  &kp LA(SINGLE_QUOTE)
-&kp LEFT_SHIFT  &kp Z                 &x_cut            &c_copy         &v_paste         &kp B        &kp C_MUTE       &kp CAPSLOCK  &kp N        &kp M           &kp COMMA       &kp DOT            &kp FSLH                   &kp RSHFT
+&kp LEFT_SHIFT  &kp Z                 &x_cut            &c_copy         &v_paste         &kp B        &kp C_MUTE       &kp CAPSLOCK  &kp N        &kp M           &kp COMMA       &kp DOT            &kp FSLH                   &kp EXCLAMATION
                                       &kp LEFT_COMMAND  &kp LEFT_ARROW  &kp RIGHT_ARROW  &lt 2 SPACE  &kp BACKSPACE    &mo 1         &lt 2 ENTER  &kp UP_ARROW    &kp DOWN_ARROW  &kp RGUI
             >;
 
@@ -140,10 +140,10 @@ RH0 to RH4: 55 to 59
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1         &kp F2             &kp F3                  &kp F4                   &kp F5                               &kp F6       &kp F7            &kp F8              &kp F9     &kp F10           &kp F11
-&trans  &kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp AMPERSAND                        &kp TILDE    &kp BACKSLASH     &kp PIPE            &kp SLASH  &kp SINGLE_QUOTE  &kp F12
-&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp HASH          &kp ASTERISK        &kp PLUS   &kp MINUS         &kp QUESTION
-&trans  &kp EQUAL      &kp LA(E)          &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp DOLLAR     &trans        &trans  &kp PERCENT  &kp RBKT          &kp SEMI            &kp COLON  &kp UNDERSCORE    &trans
+&trans  &kp F1         &kp F2             &kp F3                  &kp F4                   &kp F5                               &kp F6       &kp F7            &kp F8              &kp F9        &kp F10           &kp F11
+&trans  &kp GRAVE      &kp DOUBLE_QUOTES  &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp DOLLAR                           &kp TILDE    &kp BACKSLASH     &kp PIPE            &kp SLASH     &kp SINGLE_QUOTE  &kp F12
+&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS    &kp EQUAL                            &kp CARET    &kp HASH          &kp PLUS            &kp ASTERISK  &kp MINUS         &kp QUESTION
+&trans  &kp EQUAL      &kp LA(E)          &kp LEFT_BRACKET        &kp RIGHT_BRACKET        &kp AMPERSAND  &trans        &trans  &kp PERCENT  &kp RBKT          &kp SEMI            &kp COLON     &kp UNDERSCORE    &trans
                        &kp PERCENT        &kp LS(LA(LEFT_ARROW))  &kp LS(LA(RIGHT_ARROW))  &kp ENTER      &kp DELETE    &trans  &trans       &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &trans
             >;
 
@@ -163,10 +163,10 @@ RH0 to RH4: 55 to 59
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans           &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &bt BT_PRV    &bt BT_NXT                      &kp ASTERISK  &kp KP_N7        &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans           &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS        &kp EXCLAMATION
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCLAMATION  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans     &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &bt BT_PRV    &bt BT_NXT                      &kp ASTERISK  &kp KP_N7        &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EXCLAMATION
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCL   &trans
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &kp COMMA        &kp KP_NUMBER_0  &kp PERIOD
             >;
 
