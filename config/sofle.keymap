@@ -32,17 +32,11 @@ RH0 to RH4: 55 to 59
 
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
-&left_encoder {
-    steps = <30>;
-};
+&left_encoder { steps = <30>; };
 
-&right_encoder {
-    steps = <30>;
-};
+&right_encoder { steps = <30>; };
 
-&sensors {
-    triggers-per-rotation = <15>;
-};
+&sensors { triggers-per-rotation = <15>; };
 
 / {
     behaviors {
@@ -175,11 +169,11 @@ RH0 to RH4: 55 to 59
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans     &trans
-&trans      &kp INS       &kp LG(W)     &kp LG(E)     &kp LS(LG(R))  &kp LG(T)                       &kp ASTERISK  &kp KP_N7        &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
-&trans      &kp LALT      &kp LG(S)     &kp LG(D)     &kp LS(LG(F))  &kp LG(G)                       &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EXCLAMATION
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE    &kp LG(B)     &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EXCL   &trans
-                          &trans        &trans        &trans         &trans        &trans    &trans  &trans        &kp COMMA        &kp KP_NUMBER_0  &kp PERIOD
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                    &trans        &trans           &trans           &trans           &trans     &trans
+&trans      &kp LG(Q)      &kp LG(W)     &kp LG(E)     &kp LS(LG(R))  &kp LG(T)                       &kp ASTERISK  &kp KP_N7        &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &trans
+&trans      &kp LG(A)      &kp LG(S)     &kp LG(D)     &kp LS(LG(F))  &kp LG(G)                       &kp PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp EXCLAMATION
+&trans      &kp LG(LS(Z))  &kp LG(X)     &kp LG(C)     &kp LG(LS(V))  &kp LG(B)     &trans    &trans  &kp MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &trans
+                           &trans        &trans        &trans         &trans        &trans    &trans  &trans        &kp COMMA        &kp KP_NUMBER_0  &kp PERIOD
             >;
 
             sensor-bindings =
