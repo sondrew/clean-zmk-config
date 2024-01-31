@@ -32,6 +32,11 @@ RH0 to RH4: 55 to 59
 
 &nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
 
+&sensors {
+    steps = <30>;
+    triggers-per-rotation = <30>;
+};
+
 / {
     behaviors {
         /* left-hand HRMs */
