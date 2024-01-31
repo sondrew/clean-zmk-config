@@ -40,10 +40,6 @@ RH0 to RH4: 55 to 59
     steps = <30>;
 };
 
-&sensors {
-    triggers-per-rotation = <30>;
-};
-
 / {
     behaviors {
         /* left-hand HRMs */
